@@ -8,11 +8,11 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import reactor.core.publisher.Flux;
 
-//@Log4j2
-//@Configuration
+@Log4j2
+@Configuration
 public class LoadDatabase {
 
-    /*@Bean
+    @Bean
     CommandLineRunner init(RanchRepository repository) {
         return args -> Flux.just(
                 RanchEntity.builder()
@@ -26,5 +26,5 @@ public class LoadDatabase {
                         .build())
                 .flatMap(repository::save)
                 .subscribe(log::debug);
-    }*/
+    }
 }
