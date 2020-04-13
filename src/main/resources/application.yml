@@ -1,0 +1,12 @@
+spring.data.mongodb.uri: mongodb://localhost:27017/trapcounts
+
+server:
+  port: 9000
+
+logging:
+  level:
+    com:
+      riac.trapcount: DEBUG
+
+app.name: TrapcountApp
+app.description: ${app.name} is a Spring Boot application for Manage the Ranches
