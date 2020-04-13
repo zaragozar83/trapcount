@@ -19,7 +19,7 @@ public class RanchController {
 
     @GetMapping("/welcome/{name}")
     public String welcome(@PathVariable String name) {
-        return name.isEmpty() ? "Hey!" : "Hey, " + name;
+        return name.isEmpty() ? "Hey!" : "Hey, Welcome " + name;
     }
 
     @GetMapping
